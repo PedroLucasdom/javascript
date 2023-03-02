@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de multa</h1>
+    <form action="cadastro.php" method="post">
+        <div>
+            <label for="txtvel">Velocidade do carro:</label>
+            <input type="number" name="txtvel" id="txtvel"> km/h
+            <input type="button" value="Verificar" onclick="clicar()">
+        </div>
+        <div id="res">
+
+        </div>
+    </form>
+
+    <script>
+        function clicar() {
+            var txtv = window.document.getElementById('txtvel')
+            var vel = Number(txtv.value)
+            var res = window.document.getElementById('res')
+
+            res.innerHTML = `<p> Sua velocidade é de ${vel}km/h </p>`
+            if (vel > 80) {
+                res.innerHTML += '<p> Você ultrapassou o limite de velocidade de 80km/h. MULTADO! </p>'
+            }
+        }
+    </script>
+</body>
+</html>
