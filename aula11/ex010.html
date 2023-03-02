@@ -28,6 +28,8 @@
             res.innerHTML = `<p> Sua velocidade é de ${vel}km/h </p>`
             if (vel > 80) {
                 res.innerHTML += '<p> Você ultrapassou o limite de velocidade de 80km/h. MULTADO! </p>'
+            }else {
+                res.innerHTML += '<p> Você não passou o limite de velocidade, parabéns!'
             }
         }
     </script>
