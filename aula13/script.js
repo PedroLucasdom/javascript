@@ -1,5 +1,5 @@
 var agora = new Date()
-var hora = 21
+var hora = agora.getHours()
 var corpo = window.document.body
 var p = window.document.getElementById('p')
 var imagem = window.document.getElementById('imagem')
