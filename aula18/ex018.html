@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <div>
+                <label for="ntxt">Número:</label>
+                <input type="number" name="numero" id="ntxt">
+                <input type="button" value="Gerar Tabuada" onclick="clicar()">
+            </div>
+        </form>
+
+        <div id="p">
+            Digite um número acima...
+        </div>
+    </main>
+
+    <footer>
+        <p>Criado por Pedro Lucas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
