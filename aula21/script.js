@@ -30,7 +30,16 @@ function fim() {
         }
     }
 
+    var soma = numeros[0]
+    for (var i = 1; i < numeros.length; i++){
+        soma = soma + numeros[i]
+    }
+    
+    var media = soma / numeros.length
+
     p.innerHTML += `<p>Ao todo, temos ${numeros.length} números cadastrados.</p>`
     p.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
     p.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`
+    p.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`
+    p.innerHTML += `<p>A média dos valores digitados é ${media}`
 }
